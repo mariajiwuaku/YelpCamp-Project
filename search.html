@@ -4,12 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="./src/default.css">
-    <title>YelpCamp Project</title>
+    <title>Search Page</title>
 
 </head>
 <body>
     
+    <!-- NAVBAR -->
+<section class="h-48 max-h-full md:max-h-screen mb-0">
+    <nav>
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div>
+                        <!-- Website Logo -->
+                        <div class="flex items-center  mt-4">
+                            <img src="./src/Assets/Logo.svg" alt="Logo" >
+            
+                        </div>
+                    </div>
+                    <!-- Primary Navbar items -->
+                    <div class="hidden md:flex items-center space-x-1">
+                        <a href="" class="py-3 px-2 text-black-500  font-bold hover:bg-red-600 hover:text-white transition duration-300">Home</a>
+    
+                    </div>
+                </div>
+                <!-- Secondary Navbar items -->
+                <div class="hidden md:flex items-center space-x-3 ">
+                    <a href="" class="py-2 px-2 font-medium  rounded hover:bg-red-600 hover:text-white transition duration-300">Login</a>
+                    <a href="" class="py-2 px-2 font-medium bg-black rounded text-white hover:  hover:bg-red-600 transition duration-300">Create an account</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                    <svg class=" w-6 h-6 text-gray-500 hover:text-green-500 "
+                        x-show="!showMenu"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                    >
+                        <path d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+                </div>
+            </div>
+        </div>
+        <!-- mobile menu -->
+        <div class="hidden mobile-menu">
+            <ul class="">
+                <li class="active"><a href="index.html" class="block text-sm px-2 py-4 text-white bg-green-500 font-semibold">Home</a></li>
+                
+            </ul>
+        </div>
+    </nav>
+    <section class="">
+        <!-----END OF NAVBAR---->
+    
+              <!-- HERO PAGE -->
+              <div class="bg-green-500  min-h-0 md:min-h-full mt-0 mb-8 mr-8 ml-8">
+              <div class="px-6 py-12 text-center md:px-12 lg:my-12 lg:text-left">
+                <div class="w-100 mx-auto sm:max-w-2xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl">
+                  <div class="grid items-center gap-12 lg:grid-cols-2">
+                    <div class="mt-12 lg:mt-0">
+                      <h1 class="mt-0 mb-12 text-4xl font-bold tracking-tight md:text-5xl xl:text-6xl">
+                        Welcome to YelpCamp!
+                      </h1>
+                      <p class="text-primary">View our hand-picked campgrounds from all over the world,or add your own</p>
+                      <div class="flex-row md:flex justify-between px-4">
+                        <div class="pt-2 relative mx-auto text-gray-600">
+                            <button class= " border-gray-300 bg-white h-12 px-8 pr-4 ml-8 rounded-lg text-sm focus:outline-none" >Search for camps</button>
+                            <button class="absolute left-6 top-3 mt-4 mr-8 ml-8 px-8" >
+                             <img src="./src/Assets/Search Icon.svg" alt="">
+                            </button>
+                        <button type="submit"
+                          class="inline-block rounded bg-black p-4  text-white">Search 
+                        </button>
+                      </div>
+                    </div>
+        </div>
+    </div> 
+                </div>
+              </div>
+              </div>
+            </section>
+            </section>
 
-    <script src="./src/script.js"></script>
+
+
+
+
+
+        <script src="./src/script.js"></script>
+    
+
+   
 </body>
 </html>
