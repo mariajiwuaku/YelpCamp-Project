@@ -9,28 +9,29 @@
 </head>
 <body>
  
-<!-- Navbar goes here -->
-<nav class="bg-white shadow-lg">
+<!-- NAVBAR -->
+
+<nav >
     <div class="max-w-6xl mx-auto px-4">
         <div class="flex justify-between">
             <div class="flex space-x-7">
                 <div>
                     <!-- Website Logo -->
-                    <div class="flex items-center py-4 px-2">
+                    <div class="flex items-center  mt-4">
                         <img src="./src/Assets/Logo.svg" alt="Logo" >
         
                     </div>
                 </div>
                 <!-- Primary Navbar items -->
                 <div class="hidden md:flex items-center space-x-1">
-                    <a href="" class="py-4 px-2 text-green-500 border-b-4 border-green-500 font-semibold ">Home</a>
+                    <a href="" class="py-3 px-2 text-black-500  font-bold hover:bg-red-600 hover:text-white transition duration-300">Home</a>
 
                 </div>
             </div>
             <!-- Secondary Navbar items -->
             <div class="hidden md:flex items-center space-x-3 ">
-                <a href="" class="py-2 px-2 font-medium  rounded hover:bg-green-500 hover:text-white transition duration-300">Login</a>
-                <a href="" class="py-2 px-2 font-medium bg-black-500 rounded hover: text-red hover:bg-red-400 transition duration-300">Create an account</a>
+                <a href="" class="py-2 px-2 font-medium  rounded hover:bg-red-600 hover:text-white transition duration-300">Login</a>
+                <a href="" class="py-2 px-2 font-medium bg-black rounded text-white hover:  hover:bg-red-600 transition duration-300">Create an account</a>
             </div>
             <!-- Mobile menu button -->
             <div class="md:hidden flex items-center">
@@ -57,9 +58,35 @@
             
         </ul>
     </div>
-
 </nav>
+    <!-----END OF NAVBAR---->
 
+          <!-- HERO PAGE -->
+          <div class=" bg-white shadow-lg">
+          <div class="px-6 py-12 text-center md:px-12 lg:my-12 lg:text-left">
+            <div class="w-100 mx-auto sm:max-w-2xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl">
+              <div class="grid items-center gap-12 lg:grid-cols-2">
+                <div class="mt-12 lg:mt-0">
+                  <h1 class="mt-0 mb-12 text-4xl font-bold tracking-tight md:text-5xl xl:text-6xl">
+                    Welcome to YelpCamp!
+                  </h1>
+                  <p class="text-primary">View our hand-picked campgrounds from all over the world,or add your own</p>
+                  <div class="flex-row md:flex justify-between">
+                    <div class="pt-2 relative mx-auto text-gray-600">
+                        <input class= "border-2 border-gray-300 bg-white h-14 px-6 pr-16 rounded-lg text-sm focus:outline-none"  type="search" name="search" placeholder="Search for camps">
+                        <button type="submit" class="absolute left-3 top-3 mt-5 mr-5" >
+                         <img src="./src/Assets/Search Icon.svg" alt="">
+                        </button>
+                    <button type="submit"
+                      class="inline-block rounded bg-black p-4  text-white">Search 
+                    </button>
+                  </div>
+                </div>
+    </div>
+</div> 
+            </div>
+          </div>
+          </div>
     <script src="./src/script.js"></script>
 </body>
 </html>
