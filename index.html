@@ -7,8 +7,75 @@
     <title>YelpCamp Project</title>
 
 </head>
-<body>
- 
+<body class="bg-bgColor">
+    <div class="flex justify-between">
+      <div class="">
+        <!-- website logo -->
+        <div class="p-5 sm:p-7 lg:px-32 lg:pt-10">
+          <a href="#">
+            <img src="./src/Assets/Logo.svg" alt="logo" class="" />
+          </a>
+        </div>
 
-</body>
+        <!-- website image for tablet and mobile screens -->
+        <div class="lg:hidden">
+          <img
+            src="./src/Assets/Hero Image (Tablet and Mobile).jpg"
+            alt="HeroImg"
+            class="w-screen"
+          />
+        </div>
+
+        <!-- text content -->
+        <div class="px-5 pt-8 lg:w-2/3 lg:pl-32 sm:px-10">
+          <h1 class="text-4xl font-bold lg:text-5xl">
+            Explore the best camps on Earth.
+          </h1>
+          <div class="text-gray-600">
+            <p class="my-4">
+              YelpCamp is a curated list of the best camping spots on Earth.
+              Unfiltered and unbiased reviews.
+            </p>
+            <div class="flex items-center">
+              <img src="./src/Assets/Checkmark.svg" alt="Checkmark" />
+              <p class="pl-2">Add your own camp suggestions.</p>
+            </div>
+            <div class="flex items-center my-2">
+              <img src="./src/Assets/Checkmark.svg" alt="Checkmark" />
+              <p class="pl-2">Leave reviews and experiences.</p>
+            </div>
+            <div class="flex items-center">
+              <img src="./src/Assets/Checkmark.svg" alt="Checkmark" />
+              <p class="pl-2">See locations for all camps.</p>
+            </div>
+          </div>
+
+          <!-- view campgrounds link -->
+          <div class="my-8">
+            <a
+              href="/search.html"
+              class="p-3 text-sm font-semibold text-white transition duration-500 bg-black border-4 border-black border-solid rounded-lg hover:bg-bgColor hover:text-black"
+              target="_blank"
+              >View Campgrounds</a
+            >
+          </div>
+
+          <!-- partnered with -->
+          <div class="text-gray-600">Partnered with:</div>
+          <div class="flex w-24 sm:w-40">
+            <img src="./src/Assets/Airbnb.svg" alt="Airbnb" />
+            <img src="./src/Assets/Booking.svg" alt="Booking" class="mx-2" />
+            <img src="./src/Assets/Plum Guide.svg" alt="PlumGuide" />
+          </div>
+        </div>
+      </div>
+
+      <!-- website image for large screen -->
+      <div class="hidden lg:block">
+        <img src="./src/Assets/Hero Image.jpg" alt="HeroImg" class="h-screen" />
+      </div>
+    </div>
+
+    <script src="./src/script.js"></script>
+  </body>
 </html>
