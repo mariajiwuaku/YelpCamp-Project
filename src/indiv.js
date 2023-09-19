@@ -16,6 +16,22 @@ const campsDetails = [
     //Calaguas Island
     {
         name: "Calaguas Island",
-    }
+        price:"256/night",
+        description: "Enjoy adventurous camping amidst the lush green beauty of Ramanagara, and the surrounding mountains. Admire the perfect views of the lake, beside the camps under the twinkling stars with your loved ones. Engage in exhilarating activities for an adrenaline rush, such as hiking, cave exploration, kayaking, swimming in the lake, and more. Also enjoy playing table tennis, cricket, mud volleyball, shuttlecock, archery, and carom for fun. Spend the evening having fun-filled conversations with your group while sitting around a warm bonfire.",
+        submittedBy : "Adam Smith",
+        reviews: [
+          {name :"Jane Doe" ,timeAgo:'8 hrs Ago',content:'I had a great experience'},
+        ]
+    },
+    //Onay Beach
+    {
+      name: "Onay Beach",
+      price:"256/night",
+      description: "Enjoy adventurous camping amidst the lush green beauty of Ramanagara, and the surrounding mountains. Admire the perfect views of the lake, beside the camps under the twinkling stars with your loved ones. Engage in exhilarating activities for an adrenaline rush, such as hiking, cave exploration, kayaking, swimming in the lake, and more. Also enjoy playing table tennis, cricket, mud volleyball, shuttlecock, archery, and carom for fun. Spend the evening having fun-filled conversations with your group while sitting around a warm bonfire.",
+      submittedBy : "Adam Smith",
+      reviews: [
+        {name :"Jane Doe" ,timeAgo:'8 hrs Ago',content:'I had a great experience'},
+      ]
+  },
   ];
   
