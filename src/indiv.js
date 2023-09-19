@@ -16,6 +16,8 @@ const campsDetails = [
     //Calaguas Island
     {
         name: "Calaguas Island",
+  Image: "./src/Assests/camp Images/Compressed Images/Calaguas_Island.jpg",
+
         price:"256/night",
         description: "Enjoy adventurous camping amidst the lush green beauty of Ramanagara, and the surrounding mountains. Admire the perfect views of the lake, beside the camps under the twinkling stars with your loved ones. Engage in exhilarating activities for an adrenaline rush, such as hiking, cave exploration, kayaking, swimming in the lake, and more. Also enjoy playing table tennis, cricket, mud volleyball, shuttlecock, archery, and carom for fun. Spend the evening having fun-filled conversations with your group while sitting around a warm bonfire.",
         submittedBy : "Adam Smith",
@@ -26,6 +28,7 @@ const campsDetails = [
     //Onay Beach
     {
       name: "Onay Beach",
+  Image: "./src/Assests/camp Images/Compressed Images/Onay_beach.jpg",
       price:"256/night",
       description: "Enjoy adventurous camping amidst the lush green beauty of Ramanagara, and the surrounding mountains. Admire the perfect views of the lake, beside the camps under the twinkling stars with your loved ones. Engage in exhilarating activities for an adrenaline rush, such as hiking, cave exploration, kayaking, swimming in the lake, and more. Also enjoy playing table tennis, cricket, mud volleyball, shuttlecock, archery, and carom for fun. Spend the evening having fun-filled conversations with your group while sitting around a warm bonfire.",
       submittedBy : "Adam Smith",
@@ -33,5 +36,39 @@ const campsDetails = [
         {name :"Jane Doe" ,timeAgo:'8 hrs Ago',content:'I had a great experience'},
       ]
   },
+  //Seven sisters water fall
+  {
+    name: "Seven Sister's Waterfall",
+  Image: "./src/Assests/camp Images/Compressed Images/Seven_Sisters_Waterfall.jpg",
+    price:"256/night",
+    description: "Enjoy adventurous camping amidst the lush green beauty of Ramanagara, and the surrounding mountains. Admire the perfect views of the lake, beside the camps under the twinkling stars with your loved ones. Engage in exhilarating activities for an adrenaline rush, such as hiking, cave exploration, kayaking, swimming in the lake, and more. Also enjoy playing table tennis, cricket, mud volleyball, shuttlecock, archery, and carom for fun. Spend the evening having fun-filled conversations with your group while sitting around a warm bonfire.",
+    submittedBy : "Adam Smith",
+    reviews: [
+      {name :"Jane Doe" ,timeAgo:'8 hrs Ago',content:'I had a great experience'},
+    ]
+},
+//Latik Riverside
+{
+  name: "Latik Riverside",
+  Image: "./src/Assests/camp Images/Compressed Images/Latik_Riverside.jpg",
+  
+  price:"256/night",
+  description: "Enjoy adventurous camping amidst the lush green beauty of Ramanagara, and the surrounding mountains. Admire the perfect views of the lake, beside the camps under the twinkling stars with your loved ones. Engage in exhilarating activities for an adrenaline rush, such as hiking, cave exploration, kayaking, swimming in the lake, and more. Also enjoy playing table tennis, cricket, mud volleyball, shuttlecock, archery, and carom for fun. Spend the evening having fun-filled conversations with your group while sitting around a warm bonfire.",
+  submittedBy : "Adam Smith",
+  reviews: [
+    {name :"Jane Doe" ,timeAgo:'8 hrs Ago',content:'I had a great experience'},
+  ]
+},
+//Buley springs
+{
+  name: "Buley Springs",
+  Image: "./src/Assests/camp Images/Compressed Images/Buloy_springs.jpg",
+  price:"256/night",
+  description: "Enjoy adventurous camping amidst the lush green beauty of Ramanagara, and the surrounding mountains. Admire the perfect views of the lake, beside the camps under the twinkling stars with your loved ones. Engage in exhilarating activities for an adrenaline rush, such as hiking, cave exploration, kayaking, swimming in the lake, and more. Also enjoy playing table tennis, cricket, mud volleyball, shuttlecock, archery, and carom for fun. Spend the evening having fun-filled conversations with your group while sitting around a warm bonfire.",
+  submittedBy : "Adam Smith",
+  reviews: [
+    {name :"Jane Doe" ,timeAgo:'8 hrs Ago',content:'I had a great experience'},
+  ]
+},
   ];
   
