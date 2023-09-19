@@ -9,21 +9,22 @@
 </head>
 <body>
     
-    <!-- NAVBAR -->
+    <!-- SECTION -->
 <section class=" container w-screen ">
-    <nav>
-        <div class="max-w-6xl mx-auto p-4  mr-8  ml-8 " >
-            <div class="flex justify-between mr-8 px-4">
+  <!--NAVBAR-->
+    <nav >
+        <div class="max-w-full mx-auto p-4  mr-8  ml-8 " >
+            <div class="flex justify-between  pl-4" >
                 <div class="flex space-x-7">
                     <div>
                         <!-- Website Logo -->
-                        <div class="flex items-center mr-8 mt-4">
+                        <div class="flex items-center w-40 mt-8 pr-8">
                             <img src="./src/Assets/Logo.svg" alt="Logo" >
             
                         </div>
                     </div>
                     <!-- Primary Navbar items -->
-                    <div class="hidden md:flex items-center space-x-1 ">
+                    <div class="hidden md:flex items-center space-x-1 py-3 px-2 mr-4">
                         <a href="index.html" class="py-3 px-2 mr-8 text-black-500  font-bold hover:bg-red-600 hover:text-white transition duration-300">Home</a>
     
                     </div>
@@ -66,7 +67,7 @@
     
               <!-- HERO PAGE -->
               <section class="hero">
-              <div class="  min-h-0 md:min-h-full  pt-0 mt-0 mb-2  ml-4 px-4">
+              <div class="  min-h-0 md:min-h-full  pt-12 mb-12  ml-4 px-4">
               <div class="p-4 mr-8 ml-8 text-center md:px-12 lg:my-12 lg:text-left bg-orange-50">
                 <div class="w-100 mx-auto sm:max-w-2xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl">
                   <div class="grid items-center gap-12 lg:grid-cols-2">
@@ -125,7 +126,13 @@
     <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
       One of the most famous hikes in Benguet is Mt Ulap in Itogon .
     </p>
-    <button class= "py-2 px-2 font-medium  rounded text-black-600" >View Campgrounds</button>
+    <button
+  type="button"
+  class="inline-block rounded border-2 border-black-800 px-6 pb-[6px] pt-2 text-xs font-medium uppercase leading-normal text-neutral-800 transition duration-150 ease-in-out hover:border-neutral-800 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-neutral-800 focus:border-neutral-800 focus:text-neutral-800 focus:outline-none focus:ring-0 active:border-neutral-900 active:text-neutral-900 dark:border-neutral-900 dark:text-neutral-900 dark:hover:border-neutral-900 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10 dark:hover:text-neutral-900 dark:focus:border-neutral-900 dark:focus:text-neutral-900 dark:active:border-neutral-900 dark:active:text-neutral-900"
+  data-te-ripple-init>
+  Dark
+</button>
+    <button class= "inline-block py-2 px-2 font-medium bg-red700 text-black-600" >View Campgrounds</button>
   </div>
                     </div>
                     </div>
@@ -270,6 +277,7 @@
             </footer>
             
             </section>
+            <!---END OF SECTION-->
 
 
 
