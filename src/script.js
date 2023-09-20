@@ -7,18 +7,37 @@ btn.addEventListener("click", () => {
 });
 
 
+// Search bar
 
-const searchbar = document.getElementById('searchbar')
-const camps = document.querySelectorAll('#camps ')
 
-searchbar.addEventListener('input', e => {
-    const value = e.target.searchbar.value.toLowercase()
-    camps.forEach(camps => {
-        const isVisible = 
-        camps.innerHTML.toLowerCase().includes(searchbar.value);
-        camps.innerHTML.classList.toggle('hide', !isVisible)
-    })
-})
+
+function search_camps() {
+	let input = document.getElementById('searchbar').value
+	input=input.toLowerCase();
+	let x = document.getElementsByClassName('animals');
+	
+	for (i = 0; i < x.length; i++) {
+		if (!x[i].innerHTML.toLowerCase().includes(input)) {
+			x[i].style.display="none";
+		}
+		else {
+			x[i].style.display="list-item";				
+		}
+	}
+}
+
+
+// const searchbar = document.getElementById('searchbar')
+// const camps = document.querySelectorAll('#camps ')
+
+// searchbar.addEventListener('input', e => {
+//     const value = e.target.searchbar.value.toLowercase()
+//     camps.forEach(camps => {
+//         const isVisible = 
+//         camps.innerHTML.toLowerCase().includes(searchbar.value);
+//         camps.innerHTML.classList.toggle('hide', !isVisible)
+//     })
+// })
 
 // function searchCamp() {
 //     let input = document.getElementById('searchbar').value;
