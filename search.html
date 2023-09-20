@@ -10,7 +10,7 @@
 <body>
     
     <!-- SECTION -->
-<section class=" container w-screen ">
+<section class=" container w-full mr-8 p-2">
   <!--NAVBAR-->
     <nav >
         <div class="max-w-full mx-auto p-4  mr-8  ml-8 " >
@@ -66,16 +66,16 @@
      
     
               <!-- HERO PAGE -->
-              <section class="hero">
-              <div class="  min-h-0 md:min-h-full  pt-12 mb-12  ml-4 px-4">
-              <div class="p-4 mr-8 ml-8 text-center md:w-96 lg:my-4 lg:px-4 lg:w-96  lg:text-left bg-orange-50">
+              <section class="hero ">
+              <div class="  min-h-0 md:min-h-full mr-2 pt-12 mb-8  ml-4 px-4">
+              <div class="p-4 mx-auto  justify-center text-center md:max-w-full  lg:my-4 lg:px-4 lg:w-full  bg-orange-50">
                 <div class="w-100 mx-auto sm:max-w-2xl md:max-w-3xl lg:max-w-2xl xl:max-w-2xl">
                   <div class="grid items-center gap-12 lg:grid-cols-2">
                     <div class="mt-12 lg:mt-0">
-                      <h1 class="mt-0 mb-12 pr-8 text-4xl font-bold tracking-tight md:text-4xl xl:text-6xl">
+                      <h1 class="mt-0 mb-12 pr-8 text-base font-bold tracking-tight md:text-3xl xl:text-5xl">
                         Welcome to YelpCamp!
                       </h1>
-                      <p class="text-base">View our hand-picked campgrounds from all over the world,or add your own</p>
+                      <p class="text-primary md:text-sm mr-4 p-4">View our hand-picked campgrounds from all over the world,or add your own</p>
                       <div class="flex-row md:flex justify-between px-4">
                         <form method="GET">
                           <div class="relative text-gray-600 focus-within:text-gray-400  ">
@@ -84,7 +84,7 @@
                                 <img src="./src/Assets/Search Icon.svg" alt="">
                               </button>
                             </span>
-                            <input type="search" name="q" class="mt-2 mr-4 p-4 text-sm text-black-500  rounded-md pl-10 focus:outline-none focus:bg-white focus:text-gray-900" placeholder="Search for camps" autocomplete="off">
+                            <input type="search" name="q" class="m-2 p-4 text-sm text-black-500 mt-4 rounded-md pl-10 focus:outline-none focus:bg-white focus:text-gray-900" placeholder="Search for camps" autocomplete="off">
                           </div>
                         </form>
                             
@@ -101,7 +101,7 @@
               </div>
             </section>
               <!---- CAMPGROUND SECTION--->
-            <div class="container  mx-auto  md:px-12 mb-8 mr-8 ml-4" >
+            <div class="container  mx-auto  pt-12 mb-12  " >
                 <div class="flex flex-wrap  lg:-mx-2 ">
             
                     <!-- Column -->
@@ -120,10 +120,10 @@
   </div>
   <div class="p-6">
     <h5
-      class="mb-2 text-xl font-bold leading-tight text-neutral-800 ">
+      class="mb-2 text-xl font-bold leading-tight text-black-600 ">
       Mount Ulap
     </h5>
-    <p class="mb-4 text-base text-neutral-600 ">
+    <p class="mb-4 text-base text-black-300 ">
       One of the most famous hikes in Benguet is Mt Ulap in Itogon .
     </p>
   
@@ -149,10 +149,10 @@
     </div>
     <div class="p-6">
       <h5
-        class="mb-2 text-xl font-bold leading-tight text-neutral-600">
+        class="mb-2 text-xl font-bold leading-tight text-black-600">
         Calaguas Island
       </h5>
-      <p class="mb-4 text-base text-neutral-600 ">
+      <p class="mb-4 text-base text-black-300 ">
         A paradise of islands that can rival the white sand beauty of Boracay .
       </p>
       <button class= "inline-block w-full h-12 px-6 font-bold rounded-lg  border border-black-600 text-black-600" onclick="viewCampground(2)" >View Campgrounds</button>
@@ -175,10 +175,10 @@
     </div>
     <div class="p-6">
       <h5
-        class="mb-2 text-xl font-bold leading-tight text-neutral-600">
+        class="mb-2 text-xl font-bold leading-tight text-black-600">
         Onay Beach
       </h5>
-      <p class="mb-4 text-base text-neutral-600 ">
+      <p class="mb-4 text-base text-black-300 ">
         This is one of the best beach camping sites, beautiful and pristine .
       </p>
       <button class= "inline-block w-full h-12 px-6 font-bold rounded-lg  border border-black-600 text-black-600" onclick="viewCampground(3)">View Campgrounds</button>
@@ -202,10 +202,10 @@
     </div>
     <div class="p-6">
       <h5
-        class="mb-2 text-xl font-bold leading-tight text-neutral-600 ">
+        class="mb-2 text-xl font-bold leading-tight text-black-600 ">
         Seven Sisters Waterfall
       </h5>
-      <p class="mb-4 text-base text-neutral-600 ">
+      <p class="mb-4 text-base text-black-300 ">
         The seven sisters is the 39th tallest waterfall in Norway.
       </p>
       <button class= "inline-block w-full h-12 px-6 font-bold rounded-lg  border border-black-600 text-black-600" onclick="viewCampground(4)" >View Campgrounds</button>
@@ -228,10 +228,10 @@
     </div>
     <div class="p-6">
       <h5
-        class="mb-2 text-xl font-bold leading-tight text-neutral-600">
+        class="mb-2 text-xl font-bold leading-tight text-black-600">
         Latik Riverside
       </h5>
-      <p class="mb-4 text-base text-neutral-600 ">
+      <p class="mb-4 text-base text-black-300 ">
         Philippines is one of the most dazzling countries in all of Asia.
       </p>
       <button class= "inline-block w-full h-12 px-6 font-bold rounded-lg  border border-black-600 text-black-600" onclick="viewCampground(5)" >View Campgrounds</button>
@@ -254,10 +254,10 @@
     </div>
     <div class="p-6">
       <h5
-        class="mb-2 text-xl font-bold leading-tight text-neutral-600 ">
+        class="mb-2 text-xl font-bold leading-tight text-black-600 ">
         Buloy Springs
       </h5>
-      <p class="mb-4 text-base text-neutral-600 ">
+      <p class="mb-4 text-base text-black-300 ">
         This is one of the best beach camping sites,beautiful and pristine.
       </p>
       <button class= "inline-block w-full h-12 px-6 font-bold rounded-lg  border border-black-600 text-black-600" onclick="viewCampground(6)">View Campgrounds</button>
