@@ -3030,6 +3030,10 @@ video {
     width: 50%;
   }
 
+  .md\:w-96 {
+    width: 24rem;
+  }
+
   .md\:max-w-3xl {
     max-width: 48rem;
   }
@@ -3053,6 +3057,11 @@ video {
   .md\:text-5xl {
     font-size: 3rem;
     line-height: 1;
+  }
+
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
 
@@ -3087,8 +3096,16 @@ video {
     width: 66.666667%;
   }
 
+  .lg\:w-96 {
+    width: 24rem;
+  }
+
   .lg\:max-w-5xl {
     max-width: 64rem;
+  }
+
+  .lg\:max-w-2xl {
+    max-width: 42rem;
   }
 
   .lg\:grid-cols-2 {
@@ -3139,6 +3156,10 @@ video {
 @media (min-width: 1280px) {
   .xl\:max-w-7xl {
     max-width: 80rem;
+  }
+
+  .xl\:max-w-2xl {
+    max-width: 42rem;
   }
 
   .xl\:p-0 {
