@@ -971,10 +971,6 @@ video {
   width: 100vw;
 }
 
-.w-96 {
-  width: 24rem;
-}
-
 .max-w-full {
   max-width: 100%;
 }
@@ -3034,10 +3030,6 @@ video {
     width: 50%;
   }
 
-  .md\:w-full {
-    width: 100%;
-  }
-
   .md\:max-w-3xl {
     max-width: 48rem;
   }
@@ -3116,11 +3108,6 @@ video {
   .lg\:py-0 {
     padding-top: 0px;
     padding-bottom: 0px;
-  }
-
-  .lg\:px-8 {
-    padding-left: 2rem;
-    padding-right: 2rem;
   }
 
   .lg\:pl-32 {
