@@ -589,16 +589,32 @@ video {
   top: 0.25rem;
 }
 
+.top-2 {
+  top: 0.5rem;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.top-0\.5 {
+  top: 0.125rem;
+}
+
+.top-3 {
+  top: 0.75rem;
+}
+
 .m-11 {
   margin: 2.75rem;
 }
 
-.m-16 {
-  margin: 4rem;
-}
-
 .m-8 {
   margin: 2rem;
+}
+
+.m-2 {
+  margin: 0.5rem;
 }
 
 .mx-10 {
@@ -611,14 +627,14 @@ video {
   margin-right: 2.75rem;
 }
 
-.mx-16 {
-  margin-left: 4rem;
-  margin-right: 4rem;
-}
-
 .mx-2 {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+}
+
+.mx-8 {
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .mx-auto {
@@ -656,11 +672,6 @@ video {
   margin-bottom: 2rem;
 }
 
-.mx-8 {
-  margin-left: 2rem;
-  margin-right: 2rem;
-}
-
 .mb-12 {
   margin-bottom: 3rem;
 }
@@ -681,12 +692,12 @@ video {
   margin-bottom: 2rem;
 }
 
-.ml-12 {
-  margin-left: 3rem;
+.mb-9 {
+  margin-bottom: 2.25rem;
 }
 
-.ml-16 {
-  margin-left: 4rem;
+.ml-12 {
+  margin-left: 3rem;
 }
 
 .ml-2 {
@@ -747,14 +758,6 @@ video {
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.ml-9 {
-  margin-left: 2.25rem;
-}
-
-.mb-9 {
-  margin-bottom: 2.25rem;
 }
 
 .block {
@@ -829,6 +832,10 @@ video {
   width: 1rem;
 }
 
+.w-4\/6 {
+  width: 66.666667%;
+}
+
 .w-48 {
   width: 12rem;
 }
@@ -849,12 +856,24 @@ video {
   width: 100vw;
 }
 
+.w-4\/5 {
+  width: 80%;
+}
+
 .w-5 {
   width: 1.25rem;
 }
 
 .w-5\/6 {
   width: 83.333333%;
+}
+
+.w-2\/6 {
+  width: 33.333333%;
+}
+
+.w-3\/6 {
+  width: 50%;
 }
 
 .max-w-full {
@@ -1468,12 +1487,12 @@ video {
     display: block;
   }
 
-  .sm\:flex {
-    display: flex;
-  }
-
   .sm\:hidden {
     display: none;
+  }
+
+  .sm\:w-0 {
+    width: 0px;
   }
 
   .sm\:w-40 {
@@ -1482,6 +1501,22 @@ video {
 
   .sm\:w-\[70\%\] {
     width: 70%;
+  }
+
+  .sm\:w-\[\] {
+    width: ;
+  }
+
+  .sm\:w-\[70\] {
+    width: 70;
+  }
+
+  .sm\:w-4\/6 {
+    width: 66.666667%;
+  }
+
+  .sm\:w-5\/6 {
+    width: 83.333333%;
   }
 
   .sm\:max-w-2xl {
@@ -1588,22 +1623,22 @@ video {
     margin-right: -0.5rem;
   }
 
-  .lg\:my-4 {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
-
   .lg\:mx-16 {
     margin-left: 4rem;
     margin-right: 4rem;
   }
 
-  .lg\:mt-0 {
-    margin-top: 0px;
+  .lg\:my-4 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 
   .lg\:ml-16 {
     margin-left: 4rem;
+  }
+
+  .lg\:mt-0 {
+    margin-top: 0px;
   }
 
   .lg\:block {
