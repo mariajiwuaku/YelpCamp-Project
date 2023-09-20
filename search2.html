@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./src/Assets/favicon.jpg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./src/default.css" />
+    <title>Search page</title>
+  </head>
+  <body>
+    <div class="">
+          <!-- navbar -->
+      <nav class="bg-white">
+        <div class="max-w-full mx-8 my-6 lg:mx-16">
+          <div class="flex justify-between">
+            <div class="flex items-center space-x-7">
+              <div>
+                <!-- Website Logo -->
+                <a href="./index.html">
+                  <img src="./src/Assets/Logo.svg" alt="Logo" class="" />
+                </a>
+              </div>
+              <!-- Primary Navbar items -->
+              <div class="hidden space-x-1 md:block">
+                <a
+                  href="index.html"
+                  class="px-2 py-4 font-semibold text-black"
+                  >Home</a
+                >
+              </div>
+            </div>
+            <!-- Secondary Navbar items -->
+            <div class="items-center hidden space-x-3 md:flex">
+              <a
+                href="login.html"
+                class="px-2 py-2 font-medium text-black transition duration-300 rounded hover:bg-red-600 hover:text-white"
+                >Login</a
+              >
+              <a
+                href="create.html"
+                class="px-2 py-2 font-medium text-white transition duration-300 bg-black rounded hover:bg-red-600"
+                >Create an account</a
+              >
+            </div>
+            <!-- Mobile menu button -->
+            <div class="flex items-center md:hidden">
+              <button class="outline-none mobile-menu-button">
+                <svg
+                  class="w-6 h-6 text-black hover:text-red-600"
+                  x-show="!showMenu"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- mobile menu -->
+        <div class="hidden mobile-menu">
+          <ul class="">
+            <li class="active">
+              <a
+                href="index.html"
+                class="block px-2 py-4 text-sm font-semibold text-white bg-red-600"
+                >Home</a
+              >
+            </li>
+            
+            <li>
+              <a
+                href="login.html"
+                class="block px-2 py-4 text-sm transition duration-300 hover:bg-red-600"
+                >Login</a
+              >
+            </li>
+            <li>
+              <a
+                href="create.html"
+                class="block px-2 py-4 text-sm transition duration-300 hover:bg-red-600"
+                >Create an account</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      
+      <!-- hero section -->
+      <div class="p-12 mx-8 rounded lg:mx-16 bg-bgColor">
+          <div class="md:w-[40%] sm:w-[70%] w-90%">
+             <h1 class="text-4xl font-bold">
+              welcome to YelpCamp!
+             </h1> 
+             <p class="my-6">
+              View our hand-picked campgrounds from all over the world, or add your own.
+             </p>
+             <form action="" method="get" class="flex flex-col sm:flex-row">
+              <div class="relative inline w-5/6">
+                <img src="./src/Assets/Search Icon.svg" alt="searchIcon" class="absolute pr-3 ml-3 top-1">
+                <input type="search" placeholder="Search for camps" class="p-2 outline-none pl-9">
+              </div>
+              <button class="w-5/6 px-3 py-2 ml-2 text-white bg-black rounded">Search</button>
+             </form>
+             <a href="#">
+              <p class="pt-3 underline">Or add your own campground</p>
+             </a>
+          </div>
+      </div>
+      
+      <!-- camps section -->
+       <ul class="grid grid-cols-1 gap-4 m-8 border-solid lg:m-16 lg:grid-cols-3 sm:grid-cols-2">
+            <!-- l1 -->
+            <li class="border-gray-300 border-solid border-[1px] w-full rounded-md p-2">
+                <img src="./src/Assets/Camp Images/Compressed Images/Mount Ulap.jpg" alt="" class="w-full rounded-md">
+                <div class="w-[80%]">
+                <h1 class="mt-3 font-bold">Mount Ulap</h1>
+                <p class="py-2">
+                    One of the most famous hikes in Benguet is Mt Ulap in Itogan.
+                </p>
+                </div> 
+                <div class="overflow-hidden text-center">
+                    <a href="" class="my-3 font-bold w-full py-3 block rounded-md border-gray-300 border-solid border-[1px] hover:bg-black hover:text-white hover:border-black">
+                        View campground
+                    </a> 
+                </div>
+                
+            </li>
+
+            <!-- l2 -->
+            <li class="border-gray-300 border-solid border-[1px] w-full rounded-md p-2">
+                <img src="./src/Assets/Camp Images/Compressed Images/Calaguas Island.jpg" alt="" class="w-full rounded-md">
+                <div class="w-[80%]">
+                <h1 class="mt-3 font-bold">Calaguas Island</h1>
+                <p class="py-2">
+                    A paradise of islands that can rival the white sand beauty of
+                  Boracay.
+                </p>
+                </div> 
+                <div class="overflow-hidden text-center">
+                    <a href="" class="my-3 font-bold w-full py-3 block rounded-md border-gray-300 border-solid border-[1px] hover:bg-black hover:text-white hover:border-black">
+                        View campground
+                    </a> 
+                </div>
+                
+            </li>
+
+            <!-- li3 -->
+            <li class="border-gray-300 border-solid border-[1px] w-full rounded-md p-2">
+                <img src="./src/Assets/Camp Images/Compressed Images/Onay Beach.jpg" alt="" class="w-full rounded-md">
+                <div class="w-[80%]">
+                <h1 class="mt-3 font-bold">Onay Beach</h1>
+                <p class="py-2">
+                    This is one of the best beach camping sites, beautiful and
+                  pristine.
+                </p>
+                </div> 
+                <div class="overflow-hidden text-center">
+                    <a href="" class="my-3 font-bold w-full py-3 block rounded-md border-gray-300 border-solid border-[1px] hover:bg-black hover:text-white hover:border-black">
+                        View campground
+                    </a> 
+                </div>
+                
+            </li>
+            
+            <!-- li4 -->
+            <li class="border-gray-300 border-solid border-[1px] w-full rounded-md p-2">
+                <img src="./src/Assets/Camp Images/Compressed Images/Seven Sisters Waterfall.jpg" alt="" class="w-full rounded-md">
+                <div class="w-[80%]">
+                <h1 class="mt-3 font-bold">Seven Sisters Waterfall</h1>
+                <p class="py-2">
+                    The seven sisters is the 39th tallest waterfall in Norway.
+                </p>
+                </div> 
+                <div class="overflow-hidden text-center">
+                    <a href="" class="my-3 font-bold w-full py-3 block rounded-md border-gray-300 border-solid border-[1px] hover:bg-black hover:text-white hover:border-black">
+                        View campground
+                    </a> 
+                </div>
+                
+            </li>
+
+            <!-- li5 -->
+            <li class="border-gray-300 border-solid border-[1px] w-full rounded-md p-2">
+                <img src="./src/Assets/Camp Images/Compressed Images/Latik Riverside.jpg" alt="" class="w-full rounded-md">
+                <div class="w-[80%]">
+                <h1 class="mt-3 font-bold">Latik Riverside</h1>
+                <p class="py-2">
+                    Philippines is one of the most dazzling countries in all of
+                  Asia.
+                </p>
+                </div> 
+                <div class="overflow-hidden text-center">
+                    <a href="" class="my-3 font-bold w-full py-3 block rounded-md border-gray-300 border-solid border-[1px] hover:bg-black hover:text-white hover:border-black">
+                        View campground
+                    </a> 
+                </div>
+                
+            </li>
+
+            <!-- li6 -->
+            <li class="border-gray-300 border-solid border-[1px] w-full rounded-md p-2">
+                <img src="./src/Assets/Camp Images/Compressed Images/Mount Ulap.jpg" alt="" class="w-full rounded-md">
+                <div class="w-[80%]">
+                <h1 class="mt-3 font-bold">Buloy Springs</h1>
+                <p class="py-2">
+                    This is one of the best beach camping sites,beautiful and
+                  pristine.
+                </p>
+                </div> 
+                <div class="overflow-hidden text-center">
+                    <a href="" class="my-3 font-bold w-full py-3 block rounded-md border-gray-300 border-solid border-[1px] hover:bg-black hover:text-white hover:border-black">
+                        View campground
+                    </a> 
+                </div>
+                
+            </li>
+            
+       </ul>
+      
+     <footer class="ml-8 mb-9 lg:ml-16">
+        <img src="./src/Assets/Logo.svg" alt="" class="" />
+      </footer>
+    </div>
+    <script src="./src/script.js"></script>
+  </body>
+</html>
