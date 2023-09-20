@@ -9,34 +9,35 @@
 </head>
 <body>
     
-    <!-- NAVBAR -->
+    <!-- SECTION -->
 <section class=" container w-screen ">
-    <nav>
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="flex justify-between">
+  <!--NAVBAR-->
+    <nav >
+        <div class="max-w-full mx-auto p-4  mr-8  ml-8 " >
+            <div class="flex justify-between  pl-4" >
                 <div class="flex space-x-7">
                     <div>
                         <!-- Website Logo -->
-                        <div class="flex items-center  mt-4">
-                            <img src="./src/Assets/Logo.svg" alt="Logo" >
+                        <div class="flex items-center w-48 mt-8 pr-8">
+                            <img src="./src/Assets/Logo.svg" alt="Logo " >
             
                         </div>
                     </div>
                     <!-- Primary Navbar items -->
-                    <div class="hidden md:flex items-center space-x-1">
-                        <a href="" class="py-3 px-2 text-black-500  font-bold hover:bg-red-600 hover:text-white transition duration-300">Home</a>
+                    <div class="hidden md:flex items-center space-x-1 py-3 px-2 mr-4">
+                        <a href="index.html" class="py-3 px-2 mr-8 text-black-500  font-bold hover:bg-red-600 hover:text-white transition duration-300">Home</a>
     
                     </div>
                 </div>
                 <!-- Secondary Navbar items -->
-                <div class="hidden md:flex items-center space-x-3 ">
-                    <a href="" class="py-2 px-2 font-medium  rounded hover:bg-red-600 hover:text-white transition duration-300">Login</a>
-                    <a href="" class="py-2 px-2 font-medium bg-black rounded text-white hover:  hover:bg-red-600 transition duration-300">Create an account</a>
+                <div class="hidden md:flex items-center justify-around ml-8">
+                    <a href="login.html" class="py-2 px-8 font-bold  rounded hover:bg-red-600 hover:text-white transition duration-300">Login</a>
+                    <a href="create.html" class="py-2 px-2 ml-12  bg-black rounded text-white hover:  hover:bg-red-600 transition duration-300">Create an account</a>
                 </div>
                 <!-- Mobile menu button -->
-                <div class="md:hidden flex items-center">
+                <div class="md:hidden flex items-center hover:text-red-600">
                     <button class="outline-none mobile-menu-button">
-                    <svg class=" w-6 h-6 text-gray-500 hover:text-green-500 "
+                    <svg class=" w-6 h-6 text-gray-500 hover:text-red-600 "
                         x-show="!showMenu"
                         fill="none"
                         stroke-linecap="round"
@@ -54,17 +55,20 @@
         <!-- mobile menu -->
         <div class="hidden mobile-menu">
             <ul class="">
-                <li class="active"><a href="index.html" class="block text-sm px-2 py-4 text-white bg-green-500 font-semibold">Home</a></li>
-                
+                <li class="active"><a href="index.html" class="block text-sm px-2 py-4 text-black-500 font-semibold hover:bg-red-600">Home</a></li>
+               <li> <a href="login.html" class="block text-sm px-2 py-4 text-black-500  font-semibold hover:bg-red-600">Login</a> </li>
+                  <li> <a href="create.html" class="block mr-4 text-sm px-2 py-4 text-black-500 font-semibold hover:bg-red-600">Create an account</a></li>
             </ul>
         </div>
     </nav>
-    <section class="hero">
-        <!-----END OF NAVBAR---->
+       <!-----END OF NAVBAR---->
+    
+     
     
               <!-- HERO PAGE -->
-              <div class="bg-gray-300  min-h-0 md:min-h-full mt-0 mb-8 mr-8 ml-8">
-              <div class="px-6 py-12 text-center md:px-12 lg:my-12 lg:text-left">
+              <section class="hero">
+              <div class="  min-h-0 md:min-h-full  pt-12 mb-12  ml-4 px-4">
+              <div class="p-4 mr-8 ml-8 text-center md:px-12  lg:text-left bg-orange-50">
                 <div class="w-100 mx-auto sm:max-w-2xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl">
                   <div class="grid items-center gap-12 lg:grid-cols-2">
                     <div class="mt-12 lg:mt-0">
@@ -73,15 +77,22 @@
                       </h1>
                       <p class="text-primary">View our hand-picked campgrounds from all over the world,or add your own</p>
                       <div class="flex-row md:flex justify-between px-4">
-                        <div class="pt-2 relative mx-auto text-gray-600">
-                            <button class= " border-gray-300 bg-white h-12 px-8 pr-4 ml-8 rounded-lg text-sm focus:outline-none" >Search for camps</button>
-                            <button class="absolute left-6 top-3 mt-4 mr-8 ml-8 px-8" >
-                             <img src="./src/Assets/Search Icon.svg" alt="">
-                            </button>
+                        <form method="GET">
+                          <div class="relative text-gray-600 focus-within:text-gray-400  ">
+                            <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+                              <button type="submit" class="p-1 focus:outline-none focus:shadow-outline mt-4">
+                                <img src="./src/Assets/Search Icon.svg" alt="">
+                              </button>
+                            </span>
+                            <input type="search" name="q" class="mt-2 mr-4 p-4 text-sm text-black-500  rounded-md pl-10 focus:outline-none focus:bg-white focus:text-gray-900" placeholder="Search for camps" autocomplete="off">
+                          </div>
+                        </form>
+                            
+                          
                         <button type="submit"
-                          class="inline-block rounded bg-black p-4  text-white">Search 
+                          class="inline-block rounded bg-black mt-2 mr-8 p-4 text-white">Search 
                         </button>
-                      </div>
+                  
                     </div>
         </div>
     </div> 
@@ -90,11 +101,11 @@
               </div>
             </section>
               <!---- CAMPGROUND SECTION--->
-            <div class="container my-12 mx-auto  md:px-12 mb-8 mr-8 ml-4">
-                <div class="flex flex-wrap -mx-1 lg:-mx-4">
+            <div class="container  mx-auto  md:px-12 mb-8 mr-8 ml-4">
+                <div class="flex flex-wrap  lg:-mx-2 ">
             
                     <!-- Column -->
-                    <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
+                    <div class="my-1 px-1 w-32 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
                     <div
   class=" rounded-lg  border border-black-600 ">
   <div
@@ -115,7 +126,8 @@
     <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
       One of the most famous hikes in Benguet is Mt Ulap in Itogon .
     </p>
-    <button class= " border-black-300  h-12 px-8 pr-4 ml-8 rounded-lg text-sm focus:outline-none" >View Campgrounds</button>
+  
+    <button class= "inline-block w-full h-12 px-6 font-bold rounded-lg  border border-black-600 text-black-600" >View Campgrounds</button>
   </div>
                     </div>
                     </div>
@@ -143,7 +155,7 @@
       <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
         A paradise of islands that can rival the white sand beauty of Boracay .
       </p>
-      <button class= " border-black-300  h-12 px-8 pr-4 ml-8 rounded-lg text-sm focus:outline-none" >View Campgrounds</button>
+      <button class= "inline-block w-full h-12 px-6 font-bold rounded-lg  border border-black-600 text-black-600" >View Campgrounds</button>
     </div>
                       </div>
                       </div>
@@ -169,7 +181,7 @@
       <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
         This is one of the best beach camping sites, beautiful and pristine .
       </p>
-      <button class= " border-black-300  h-12 px-8 pr-4 ml-8 rounded-lg text-sm focus:outline-none" >View Campgrounds</button>
+      <button class= "inline-block w-full h-12 px-6 font-bold rounded-lg  border border-black-600 text-black-600" >View Campgrounds</button>
     </div>
                       </div>
                       </div>
@@ -196,7 +208,7 @@
       <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
         The seven sisters is the 39th tallest waterfall in Norway.
       </p>
-      <button class= " border-black-300  h-12 px-8 pr-4 ml-8 rounded-lg text-sm focus:outline-none" >View Campgrounds</button>
+      <button class= "inline-block w-full h-12 px-6 font-bold rounded-lg  border border-black-600 text-black-600" >View Campgrounds</button>
     </div>
                       </div>
                       </div>
@@ -222,7 +234,7 @@
       <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
         Philippines is one of the most dazzling countries in all of Asia.
       </p>
-      <button class= " border-black-300  h-12 px-8 pr-4 ml-8 rounded-lg text-sm focus:outline-none" >View Campgrounds</button>
+      <button class= "inline-block w-full h-12 px-6 font-bold rounded-lg  border border-black-600 text-black-600" >View Campgrounds</button>
     </div>
                       </div>
                       </div>
@@ -248,7 +260,7 @@
       <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
         This is one of the best beach camping sites,beautiful and pristine.
       </p>
-      <button class= " border-black-300  h-12 px-8 pr-4 ml-8 rounded-lg text-sm focus:outline-none" >View Campgrounds</button>
+      <button class= "inline-block w-full h-12 px-6 font-bold rounded-lg  border border-black-600 text-black-600" >View Campgrounds</button>
     </div>
                       </div>
                       </div>
@@ -256,10 +268,11 @@
             </div>
             <!--FOOTER-->
             <footer>
-                <img src="./src/Assets/Logo.svg" alt="" class="m-8 w-24">
+                <img src="./src/Assets/Logo.svg" alt="" class="ml-8 w-32 ">
             </footer>
             
             </section>
+            <!---END OF SECTION-->
 
 
 
