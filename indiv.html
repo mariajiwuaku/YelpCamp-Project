@@ -61,16 +61,18 @@
         </div>
     </nav>
        <!-----END OF NAVBAR---->
-       
+
+       <!-----------------------------CAMPGROUND LIST-------------------------------------------->
     <section> 
-     <div class="flex flex-col p-20 gap-x-6 justify-between sm:flex-row  " > 
+        <!--camp 1-->
+     <div class="flex flex-col p-20 gap-x-6 justify-between sm:flex-row" id="campground-name " > 
          <div class="card border w-1/3 p-4"> 
          <div class=" p-4 "><img src="./src/Assets/Map.png" alt="image of map" class="w-full"/></div> 
          </div> 
-         <div class=" card w-2/3 "> 
+         <div class=" card w-2/3 " id="campground-description"> 
          <div id="camp-container" class=" p-10 border gap-7 mx-10" > 
              <img src="./src/Assets/Camp Images/Compressed Images/Mount Ulap.jpg" class="w-full"/> 
-             <h3>Mount Ulap <span>104.99 /night</span></h3> 
+             <h3 class="font-bold">Mount Ulap <span>104.99 /night</span></h3> 
              <p>Mount Ulap is a 7.7 Kilometer moderately trifficked point-to-point trail located near Tuba, 
                  Benguet, Philippines that offers the chance to see wildlife and is rated as moderate.The trail 
                  is primarily used for hiking. 
@@ -110,10 +112,14 @@
   
          </div> 
        </div> 
+       
+       </div> 
+
+     
+      
      </section> 
   
- </div> 
-  
+      <button class="m-8 w-32 p-8 bg-black  text-white font-bold py-2 px-4 rounded flex items-end"><a href="search.html">Back to Search</a></button>
   
   
   
@@ -123,6 +129,8 @@
  <footer class="mx-11"> 
      <img src="./src/Assets/Logo.svg" alt="logo" class="m-8 w-32 p-8"/> 
  </footer> 
-    <script src="./src/script.js"></script> 
+
+
+    <script src="./src/indiv.js"></script> 
  </body> 
  </html>
