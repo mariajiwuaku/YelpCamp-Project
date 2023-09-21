@@ -1,5 +1,5 @@
 // indiv.js
-const campgrounds = window.campgrounds;
+const campgrounds = window.campgrounds
 console.log(campgrounds)
 function displayCampgroundDetails() {
     const urlParams = new URLSearchParams(window.location.search);
