@@ -125,10 +125,21 @@ searchInput.addEventListener("input", function () {
   campgroundImage.src = campground.imageSrc;
   campgroundImage.alt = campground.name; // Set the alt text
 
+  // Create a "View Camp" button
+  const viewCampButton = document.createElement("button");
+  viewCampButton.textContent = "View Camp";
+  viewCampButton.className = "btn-view-camp"; // You can apply CSS classes for styling
+
+  // Add an event listener to the "View Camp" button to navigate to the campground details page
+  viewCampButton.addEventListener("click", () => {
+    goToDetailsPage(campground.id);
+  });
+
     // Append elements to the camp container
     campgroundElement.appendChild(campgroundName);
     campgroundElement.appendChild(campgroundImage);
     campgroundElement.appendChild(campgroundDescription);
+    campgroundElement.appendChild(viewCampButton);
     campContainer.appendChild(campgroundElement);
   });
 });
