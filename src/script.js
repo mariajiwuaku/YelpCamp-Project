@@ -77,9 +77,10 @@ btn.addEventListener("click", () => {
                 </p>
                 </div> 
                 <div class="overflow-hidden text-center">
-                    <a href="" class="my-3 font-bold w-full py-3 block rounded-md border-gray-300 border-solid border-[1px] hover:bg-black hover:text-white hover:border-black">
-                        View campground
-                    </a> 
+                <a href="#" class="my-3 font-bold w-full py-3 block rounded-md border-gray-300 border-solid border-[1px] hover:bg-black hover:text-white hover:border-black view-campground-button" data-campground-id="1">
+                View campground
+            </a>
+            
                 </div>
                 
             </li>`
@@ -145,16 +146,19 @@ const campgrounds = [
     
   ];
   
-document.addEventListener("DOMContentLoaded", () => {
+  document.addEventListener("DOMContentLoaded", () => {
     const campgroundButtons = document.querySelectorAll(".view-campground-button");
-  
+
     campgroundButtons.forEach((button) => {
-      button.addEventListener("click", (event) => {
-        const campgroundId = event.target.dataset.campgroundId;
-        // Redirect to the individual page with the campgroundId
-        window.location.href = `indiv.html?id=${campgroundId}`;
-      });
+        button.addEventListener("click", (event) => {
+            event.preventDefault(); // Prevent the default behavior of the anchor tag
+
+            const campgroundId = event.target.dataset.campgroundId;
+            // Redirect to the individual page with the campgroundId as a query parameter
+            window.location.href = `indiv.html?campgroundId=${campgroundId}`;
+        });
     });
-  });
+});
+
   
 
