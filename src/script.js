@@ -77,16 +77,10 @@ btn.addEventListener("click", () => {
                 </p>
                 </div> 
                 <div class="overflow-hidden text-center">
-<<<<<<< HEAD
                 <a href="#" class="my-3 font-bold w-full py-3 block rounded-md border-gray-300 border-solid border-[1px] hover:bg-black hover:text-white hover:border-black view-campground-button" data-campground-id="1">
                 View campground
             </a>
             
-=======
-                    <a href="indiv.html" class="my-3 font-bold w-full py-3 block rounded-md border-gray-300 border-solid border-[1px] hover:bg-black hover:text-white hover:border-black">
-                        View campground
-                    </a> 
->>>>>>> 3ddefca3fc0e38941cbc818056c769eb44b0b574
                 </div>
                 
             </li>`
@@ -121,7 +115,7 @@ const campgrounds = [
     },
     {
       id: 2,
-      name: "Campground 2",
+      name: "",
       description: "This is the second campground.",
       // Add more properties as needed
     },
