@@ -77,7 +77,7 @@ btn.addEventListener("click", () => {
                 </p>
                 </div> 
                 <div class="overflow-hidden text-center">
-                    <a href="" class="my-3 font-bold w-full py-3 block rounded-md border-gray-300 border-solid border-[1px] hover:bg-black hover:text-white hover:border-black">
+                    <a href="indiv.html" class="my-3 font-bold w-full py-3 block rounded-md border-gray-300 border-solid border-[1px] hover:bg-black hover:text-white hover:border-black">
                         View campground
                     </a> 
                 </div>
