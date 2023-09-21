@@ -88,3 +88,47 @@ function goToDetailsPage(campgroundId) {
 }
 
 
+// SEARCH FUNCTIONALITY
+
+// Get a reference to the search input element
+const searchInput = document.getElementById("searchInput");
+
+// Get a reference to the camp container where you'll display search results
+const campContainer = document.getElementById("camp-container");
+
+// Add an event listener to the search input for the "input" event
+searchInput.addEventListener("input", function () {
+  const searchTerm = searchInput.value.toLowerCase(); // Get the search term and convert it to lowercase
+
+  // Filter the campgrounds based on the search term
+  const filteredCampgrounds = campgrounds.filter((campground) => {
+    return campground.name.toLowerCase().includes(searchTerm);
+  });
+
+  // Clear the current content of the camp container
+  campContainer.innerHTML = "";
+
+  // Display the filtered campgrounds in the camp container
+  filteredCampgrounds.forEach((campground) => {
+    // Create elements to display the campground information
+    const campgroundElement = document.createElement("div");
+    campgroundElement.classList.add("campground-card");
+    
+    const campgroundName = document.createElement("h2");
+    campgroundName.textContent = campground.name;
+    
+    const campgroundDescription = document.createElement("p");
+    campgroundDescription.textContent = campground.description;
+      
+     // Create an image element
+  const campgroundImage = document.createElement("img");
+  campgroundImage.src = campground.image; // Set the im
+  campgroundImage.alt = campground.name; // Set the alt text
+
+    // Append elements to the camp container
+    campgroundElement.appendChild(campgroundName);
+    campgroundElement.appendChild(campgroundImage);
+    campgroundElement.appendChild(campgroundDescription);
+    campContainer.appendChild(campgroundElement);
+  });
+});
