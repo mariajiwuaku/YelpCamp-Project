@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const campgroundDetails = `
         <h2 class="text-xl font-bold">${campground.name}</h2>
         <p>${campground.description}</p>
-        <img src="${campground.imageSrc}" alt="${campground.name}" />
+        <img src="${campground.imageSrc}" alt="${campground.name}" class="w-full"/>
       `;
       campgroundDetailsContainer.innerHTML = campgroundDetails;
     } else {
