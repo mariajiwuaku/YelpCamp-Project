@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // Display the campground details in the HTML
       const campgroundDetailsContainer = document.getElementById("campground-details");
       const campgroundDetails = `
-        <h2>${campground.name}</h2>
+        <h2 class="text-xl font-bold">${campground.name}</h2>
         <p>${campground.description}</p>
         <img src="${campground.imageSrc}" alt="${campground.name}" />
       `;
@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
       },
       {
         id: 6,
-        name: "Buloy Springs",
+        name: "Buloy Springs" ,
         description: "This is one of the best beach camping sites, beautiful and pristine.",
         imageSrc: "src/Assets/Camp Images/Compressed Images/BuloySprings.jpg",
       },
