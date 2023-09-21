@@ -122,7 +122,7 @@ searchInput.addEventListener("input", function () {
       
      // Create an image element
   const campgroundImage = document.createElement("img");
-  campgroundImage.src = campground.image; // Set the im
+  campgroundImage.src = campground.imageSrc;
   campgroundImage.alt = campground.name; // Set the alt text
 
     // Append elements to the camp container
