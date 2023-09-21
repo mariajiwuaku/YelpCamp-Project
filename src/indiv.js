@@ -1,6 +1,6 @@
 // indiv.js
 const campgrounds = window.campgrounds
-console.log(campgrounds)
+import campgrounds from './campList.js'; // Import the campgrounds array
 function displayCampgroundDetails() {
     const urlParams = new URLSearchParams(window.location.search);
     const campgroundId = urlParams.get('id');
