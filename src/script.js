@@ -17,7 +17,7 @@ btn.addEventListener("click", () => {
 
         {
             id: 1,
-            image: 'src/Assets/Camp Images/Compressed Images/Calaguas Ulap.jpg',
+            image: 'src/Assets/Camp Images/Compressed Images/Calaguas Island.jpg',
             title: 'Calaguas Island',
             text: 'A paradise of islands that can rival the white sand beauty of Boracay.',
         },
@@ -45,9 +45,9 @@ btn.addEventListener("click", () => {
 
         {
             id: 5,
-            image: 'src/Assets/Camp Images/Compressed Images/Mount Ulap.jpg',
-            title: 'Mount Ulap',
-            text: 'One of the most famous hikes in Benguet is Mt Ulap in Itogan.',
+            image: 'src/Assets/Camp Images/Compressed Images/Buloy Springs.jpg',
+            title: 'Buloy Springs',
+            text: 'This is one of the best beach camping sites,beautiful and pristine.',
         },
         
     ];
