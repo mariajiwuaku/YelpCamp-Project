@@ -7,6 +7,16 @@ btn.addEventListener("click", () => {
 });
 
 
+// Searching for camps using their names
+
+ 
+    
+   
+
+
+
+
+// Viewing individual campground
 
 function viewCampground(campgroundId) {
   // Redirect to the individual page with the campgroundId as a query parameter
