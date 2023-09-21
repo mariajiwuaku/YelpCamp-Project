@@ -116,9 +116,11 @@ searchInput.addEventListener("input", function () {
     
     const campgroundName = document.createElement("h2");
     campgroundName.textContent = campground.name;
+    campgroundName.className = "mb-2 text-xl font-bold leading-tight text-neutral-800 dark:text-neutral-50";
     
     const campgroundDescription = document.createElement("p");
     campgroundDescription.textContent = campground.description;
+    campgroundDescription.className = " text-sm text-neutral-600 dark:text-neutral-200";
       
      // Create an image element
   const campgroundImage = document.createElement("img");
@@ -128,7 +130,7 @@ searchInput.addEventListener("input", function () {
   // Create a "View Camp" button
   const viewCampButton = document.createElement("button");
   viewCampButton.textContent = "View Camp";
-  viewCampButton.className = "btn-view-camp"; // You can apply CSS classes for styling
+  viewCampButton.className = "inline-block w-40 h-12 px-6 font-bold rounded-lg border border-black-600 text-black-600"; // You can apply CSS classes for styling
 
   // Add an event listener to the "View Camp" button to navigate to the campground details page
   viewCampButton.addEventListener("click", () => {
