@@ -10,42 +10,42 @@ btn.addEventListener("click", () => {
     const product = [
         {
             id: 0,
-            image: 'src/Assets/Camp Images/Compressed Images/Mount Ulap.jpg',
+            image: 'src/Assets/Camp Images/Compressed Images/MountUlap.jpg',
             title: 'Mount Ulap',
             text: 'One of the most famous hikes in Benguet is Mt Ulap in Itogan.',
         },
 
         {
             id: 1,
-            image: 'src/Assets/Camp Images/Compressed Images/Calaguas Island.jpg',
+            image: 'src/Assets/Camp Images/Compressed Images/CalaguasIsland.jpg',
             title: 'Calaguas Island',
             text: 'A paradise of islands that can rival the white sand beauty of Boracay.',
         },
 
         {
             id: 2,
-            image: 'src/Assets/Camp Images/Compressed Images/Onay Beach.jpg',
+            image: 'src/Assets/Camp Images/Compressed Images/OnayBeach.jpg',
             title: 'Onay Beach',
             text: 'This is one of the best beach camping sites, beautiful and pristine.',
         },
 
         {
             id: 3,
-            image: 'src/Assets/Camp Images/Compressed Images/Seven Sisters Waterfall.jpg',
+            image: 'src/Assets/Camp Images/Compressed Images/SevenSistersWaterfall.jpg',
             title: 'Seven Sisters Waterfall',
             text: 'The seven sisters is the 39th tallest waterfall in Norway.',
         },
 
         {
             id: 4,
-            image: 'src/Assets/Camp Images/Compressed Images/Latik Riverside.jpg',
+            image: 'src/Assets/Camp Images/Compressed Images/LatikRiverside.jpg',
             title: 'Latik Riverside',
             text: 'Philippines is one of the most dazzling countries in all of Asia.',
         },
 
         {
             id: 5,
-            image: 'src/Assets/Camp Images/Compressed Images/Buloy Springs.jpg',
+            image: 'src/Assets/Camp Images/Compressed Images/BuloySprings.jpg',
             title: 'Buloy Springs',
             text: 'This is one of the best beach camping sites,beautiful and pristine.',
         },
