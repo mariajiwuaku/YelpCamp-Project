@@ -50,8 +50,7 @@ window.campgrounds = [
   
 
 
-// Your search functionality code goes here...
-// Assuming you have an HTML container to display campground cards
+
 function displayCamps() {
   // Get the campground container element
   const campgroundContainer = document.getElementById('camp-container');
@@ -99,7 +98,7 @@ function goToDetailsPage(campgroundId) {
 
 // SEARCH FUNCTIONALITY
 
-// Get a reference to the search input element
+
 const searchInput = document.getElementById("searchInput");
 
 // Get a reference to the camp container where you'll display search results
