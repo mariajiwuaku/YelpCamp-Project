@@ -82,8 +82,9 @@ function displayCamps() {
 displayCamps();
 
 
+// Function to navigate to indiv.html with the campgroundId as a query parameter
 function goToDetailsPage(campgroundId) {
-  // Navigate to the details page passing the campground ID
   window.location.href = `indiv.html?id=${campgroundId}`;
 }
+
 
