@@ -6,52 +6,84 @@ btn.addEventListener("click", () => {
     menu.classList.toggle("hidden");
 });
 
+// search bar
+    const product = [
+        {
+            id: 0,
+            image: 'src/Assets/Camp Images/Compressed Images/Mount Ulap.jpg',
+            title: 'Mount Ulap',
+            text: 'One of the most famous hikes in Benguet is Mt Ulap in Itogan.',
+        },
 
-// Search bar
+        {
+            id: 1,
+            image: 'src/Assets/Camp Images/Compressed Images/Calaguas Ulap.jpg',
+            title: 'Calaguas Island',
+            text: 'A paradise of islands that can rival the white sand beauty of Boracay.',
+        },
 
+        {
+            id: 2,
+            image: 'src/Assets/Camp Images/Compressed Images/Onay Beach.jpg',
+            title: 'Onay Beach',
+            text: 'This is one of the best beach camping sites, beautiful and pristine.',
+        },
 
+        {
+            id: 3,
+            image: 'src/Assets/Camp Images/Compressed Images/Seven Sisters Waterfall.jpg',
+            title: 'Seven Sisters Waterfall',
+            text: 'The seven sisters is the 39th tallest waterfall in Norway.',
+        },
 
-function search_camps() {
-	let input = document.getElementById('searchbar').value
-	input=input.toLowerCase();
-	let x = document.getElementsByClassName('animals');
-	
-	for (i = 0; i < x.length; i++) {
-		if (!x[i].innerHTML.toLowerCase().includes(input)) {
-			x[i].style.display="none";
-		}
-		else {
-			x[i].style.display="list-item";				
-		}
-	}
-}
+        {
+            id: 4,
+            image: 'src/Assets/Camp Images/Compressed Images/Latik Riverside.jpg',
+            title: 'Latik Riverside',
+            text: 'Philippines is one of the most dazzling countries in all of Asia.',
+        },
 
+        {
+            id: 5,
+            image: 'src/Assets/Camp Images/Compressed Images/Mount Ulap.jpg',
+            title: 'Mount Ulap',
+            text: 'One of the most famous hikes in Benguet is Mt Ulap in Itogan.',
+        },
+        
+    ];
 
-// const searchbar = document.getElementById('searchbar')
-// const camps = document.querySelectorAll('#camps ')
+    const categories = [...new Set(product.map((item) => { return item }))]
 
-// searchbar.addEventListener('input', e => {
-//     const value = e.target.searchbar.value.toLowercase()
-//     camps.forEach(camps => {
-//         const isVisible = 
-//         camps.innerHTML.toLowerCase().includes(searchbar.value);
-//         camps.innerHTML.classList.toggle('hide', !isVisible)
-//     })
-// })
+    document.getElementById('searchbar').addEventListener('keyup', (e) => {
+        const searchData = e.target.value.toLowerCase();
+        const filteredData = categories.filter((item) => {
+            return (
+                item.title.toLowerCase().includes(searchData)
+            )
+        })
+        displayItem(filteredData)
+    });
 
-// function searchCamp() {
-//     let input = document.getElementById('searchbar').value;
-//     input  = input.toLowercase();
-//     let camps = document.querySelector('#camps h5');
-//     camps.innerHTML = input.toLowerCase()
-    
-
-//     for (i = 0; i < camps.length ; i++) {
-//         if (!camps[i].innerHTML.includes(input)) {
-//             camps[i].style.display = "none";
-//         }else {
-//             camps[i].style.display = "block";
-//         }
-//     }
-
-// }
+    const displayItem = (items) => {
+        document.getElementById('list').innerHTML = items.map((item) => {
+            var { image, title, text } = item;
+            return (
+                `<li class="border-gray-300 border-solid border-[1px] w-full rounded-md p-2 camps">
+                <img class="w-full rounded-md" src= "${image}">
+                <div class="w-[80%]">
+                <h1 class="mt-3 font-bold">${title} </h1>
+                <p class="py-2">
+                    ${text}
+                </p>
+                </div> 
+                <div class="overflow-hidden text-center">
+                    <a href="" class="my-3 font-bold w-full py-3 block rounded-md border-gray-300 border-solid border-[1px] hover:bg-black hover:text-white hover:border-black">
+                        View campground
+                    </a> 
+                </div>
+                
+            </li>`
+            )
+        }).join('')
+    };
+    displayItem(categories);
