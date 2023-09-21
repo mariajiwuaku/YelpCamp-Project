@@ -1,136 +1,177 @@
-<!DOCTYPE html> 
- <html lang="en"> 
- <head> 
-     <meta charset="UTF-8"> 
-     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <link rel="stylesheet" href="./src/default.css"> 
-     <title>YelpCamp Campgrounds</title> 
-  
- </head> 
- <body> 
-     <div class="wrapper m-11"> 
-  
-      <!--NAVBAR-->
-    <nav >
-        <div class="max-w-full mx-auto p-4  mr-8  ml-8 " >
-            <div class="flex justify-between  pl-4" >
-                <div class="flex space-x-7">
-                    <div>
-                        <!-- Website Logo -->
-                        <div class="flex items-center w-48 mt-8 pr-8">
-                            <img src="./src/Assets/Logo.svg" alt="Logo " >
-            
-                        </div>
-                    </div>
-                    <!-- Primary Navbar items -->
-                    <div class="hidden md:flex items-center space-x-1 py-3 px-2 mr-4">
-                        <a href="index.html" class="py-3 px-2 mr-8 text-black-500  font-bold hover:bg-red-600 hover:text-white transition duration-300">Home</a>
-    
-                    </div>
-                </div>
-                <!-- Secondary Navbar items -->
-                <div class="hidden md:flex items-center justify-around ml-8">
-                    <a href="login.html" class="py-2 px-8 font-bold  rounded hover:bg-red-600 hover:text-white transition duration-300">Login</a>
-                    <a href="create.html" class="py-2 px-2 ml-12  bg-black rounded text-white hover:  hover:bg-red-600 transition duration-300">Create an account</a>
-                </div>
-                <!-- Mobile menu button -->
-                <div class="md:hidden flex items-center hover:text-red-600">
-                    <button class="outline-none mobile-menu-button">
-                    <svg class=" w-6 h-6 text-gray-500 hover:text-red-600 "
-                        x-show="!showMenu"
-                        fill="none"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                    >
-                        <path d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
-                </div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/default.css" />
+    <title>YelpCamp Campgrounds</title>
+  </head>
+  <body>
+    <div class="wrapper mx-4 md:mx-11">
+      <!-- Added margin for smaller screens -->
+      <!-- NAVBAR -->
+      <nav>
+        <div class="max-w-full mx-auto p-4 md:p-8">
+          <div class="flex justify-between pl-4">
+            <div class="flex items-center w-48 mt-4 md:mt-8 pr-4">
+              <img src="./src/Assets/Logo.svg" alt="Logo" class="w-full" />
             </div>
+            <div class="md:flex items-center space-x-1 py-3 px-2 mr-4">
+              <a
+                href="index.html"
+                class="py-3 px-2 mr-8 text-black-500 font-bold hover:bg-red-600 hover:text-white transition duration-300"
+                >Home</a
+              >
+            </div>
+            <div class="hidden md:flex items-center justify-around ml-8">
+              <a
+                href="login.html"
+                class="py-2 px-8 font-bold rounded hover:bg-red-600 hover:text-white transition duration-300"
+                >Login</a
+              >
+              <a
+                href="create.html"
+                class="py-2 px-2 ml-12 bg-black rounded text-white hover:bg-red-600 transition duration-300"
+                >Create an account</a
+              >
+            </div>
+            <div class="md:hidden flex items-center hover:text-red-600">
+              <button class="outline-none mobile-menu-button">
+                <svg
+                  class="w-6 h-6 text-gray-500 hover:text-red-600"
+                  x-show="!showMenu"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
-        <!-- mobile menu -->
         <div class="hidden mobile-menu">
-            <ul class="">
-                <li class="active"><a href="index.html" class="block text-sm px-2 py-4 text-black-500 font-semibold hover:bg-red-600">Home</a></li>
-               <li> <a href="login.html" class="block text-sm px-2 py-4 text-black-500  font-semibold hover:bg-red-600">Login</a> </li>
-                  <li> <a href="create.html" class="block mr-4 text-sm px-2 py-4 text-black-500 font-semibold hover:bg-red-600">Create an account</a></li>
-            </ul>
+          <ul>
+            <li class="active">
+              <a
+                href="index.html"
+                class="block text-sm px-2 py-4 text-black-500 font-semibold hover:bg-red-600"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="login.html"
+                class="block text-sm px-2 py-4 text-black-500 font-semibold hover:bg-red-600"
+                >Login</a
+              >
+            </li>
+            <li>
+              <a
+                href="create.html"
+                class="block mr-4 text-sm px-2 py-4 text-black-500 font-semibold hover:bg-red-600"
+                >Create an account</a
+              >
+            </li>
+          </ul>
         </div>
-    </nav>
-       <!-----END OF NAVBAR---->
+      </nav>
+      <!-- END OF NAVBAR -->
 
-       <!-----------------------------CAMPGROUND LIST-------------------------------------------->
-    <section> 
+      <!-- CAMPGROUND LIST -->
+      <section class="campgroups-list">
         <!--camp 1-->
-     <div class="flex flex-col p-20 gap-x-6 justify-between sm:flex-row" id="campground-name " > 
-         <div class="card border w-1/3 p-4"> 
-         <div class=" p-4 "><img src="./src/Assets/Map.png" alt="image of map" class="w-full"/></div> 
-         </div> 
-         <div class=" card w-2/3 " id="campground-description"> 
-         <div id="camp-container" class=" p-10 border gap-7 mx-10" > 
-             <img src="./src/Assets/Camp Images/Compressed Images/Mount Ulap.jpg" class="w-full"/> 
-             <h3 class="font-bold">Mount Ulap <span>104.99 /night</span></h3> 
-             <p>Mount Ulap is a 7.7 Kilometer moderately trifficked point-to-point trail located near Tuba, 
-                 Benguet, Philippines that offers the chance to see wildlife and is rated as moderate.The trail 
-                 is primarily used for hiking. 
-             </p> 
-            <p class="text-gray-700"> Submitted by Andrew Mike</p> 
+        <div
+          class="flex flex-col md:flex-row p-4 md:p-20 gap-x-6 justify-between"
+          id="campground-name"
+        >
+          <div class="card border w-full md:w-1/3 p-4">
+            <div class="p-4">
+              <img
+                src="./src/Assets/Map.png"
+                alt="image of map"
+                class="w-full"
+              />
+            </div>
+          </div>
+          <div class="card w-full md:w-2/3" id="campground-description">
+            <div
+              id="camp-container"
+              class="p-4 md:p-10 border gap-7 mx-4 md:mx-10"
+            >
+              <!-- CAMP DETAILS WILL COME HERE-->
+            </div>
+            <div class="card border p-4 md:p-10 mx-4 md:mx-10 mt-4">
+              <!--<div class="mb-5">
+                <h3 class="text-black font-bold">
+                  Adam Jones <span>13h ago</span>
+                </h3>
+                <p>
+                  Honestly one of the best experiences ever, took us a while to
+                  figure out how to get there but it was amazing
+                </p>
+                <hr />
+              </div>
+              <div class="mt-5 mb-5">
+                <h3 class="text-black font-bold">
+                  Isaac Dylan <span>1 day ago</span>
+                </h3>
+                <p>
+                  Traveling changes you as a person, you gain more perspective,
+                  this is the perfect spot to do that.
+                </p>
+                <hr />
+              </div>
+              <div class="mt-5 mb-5">
+                <h3 class="text-black font-bold">
+                  Hudson Luca <span>3 days ago</span>
+                </h3>
+                <p>
+                  Definitely recommend going there, not too far and not a lot of
+                  people to ruin the experience.
+                </p>
+                <hr />
+              </div> -->
+              <div class="flex justify-end mt-4">
+                <button
+                  href="#"
+                  class="bg-black text-white font-bold py-2 px-4 rounded flex items-end"
+                >
+                  <img
+                    src="./src/Assets/Chat Bubble.svg"
+                    alt="chat img"
+                    class="mr-2"
+                  />
+                  Leave a Review
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-  
-         </div> 
-  
-       <div class="card border  p-10 mx-10 mt-10 "> 
-         <div class="mb-5"> 
-         <h3 class="text-black font-bold">Adam Jones <span>13h ago</span></h3> 
-         <p>Honestly one of the best experience ever, took us a while to figure out how to get there but it was amazing</p> 
-     <hr> 
-     </div>   
-  
-     <div class="mt-5 mb-5"> 
-         <h3 class="text-black font-bold">Isaac Dylan <span>1 day ago</span></h3> 
-         <p>Travalling changes you as a person, you gain more perspective, this is the perfect spot to do that.</p> 
-     <hr> 
-     </div>   
-  
-     <div class="mt-5 mb-5"> 
-         <h3 class="text-black font-bold">Hudson Luca <span>3 days ago</span></h3> 
-         <p>Definitely recommend going there, not too far and not a lot of people to ruin the experience.</p> 
-     <hr> 
-     </div>  
-  
-       <div class="flex justify-end mt-4"> 
-         <button href="#" class="bg-black  text-white font-bold py-2 px-4 rounded flex items-end"> 
-             <img src="./src/Assets/Chat Bubble.svg" alt="chat img" class="mr-2" /> 
-             Leave a Review 
-           </button> 
-  
-       </div> 
-  
-  
-         </div> 
-       </div> 
-       
-       </div> 
+      <button
+        class="m-4 md:m-8 w-full md:w-32 p-4 bg-black text-white font-bold py-2 px-4 rounded"
+      >
+        <a href="search.html">Back to Search</a>
+      </button>
+    </div>
 
-     
-      
-     </section> 
-  
-      <button class="m-8 w-32 p-8 bg-black  text-white font-bold py-2 px-4 rounded flex items-end"><a href="search.html">Back to Search</a></button>
-  
-  
-  
-  
-  
-  
- <footer class="mx-11"> 
-     <img src="./src/Assets/Logo.svg" alt="logo" class="m-8 w-32 p-8"/> 
- </footer> 
+    <footer class="mx-4 md:mx-11">
+      <img
+        src="./src/Assets/Logo.svg"
+        alt="logo"
+        class="m-8 w-full md:w-32 p-8"
+      />
+    </footer>
 
-
-    <script src="./src/indiv.js"></script> 
- </body> 
- </html>
+    <script src="./src/indiv.js"></script>
+  </body>
+</html>
