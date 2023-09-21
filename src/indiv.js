@@ -1,3 +1,12 @@
+ /*HAMBURGER MENU*/
+ const btn = document.querySelector("button.mobile-menu-button");
+ const menu = document.querySelector(".mobile-menu");
+ 
+ btn.addEventListener("click", () => {
+     menu.classList.toggle("hidden");
+ });
+ 
+
 document.addEventListener("DOMContentLoaded", () => {
     // Get the campgroundId from the query parameter
     const urlParams = new URLSearchParams(window.location.search);
