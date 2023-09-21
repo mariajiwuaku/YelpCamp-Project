@@ -115,7 +115,7 @@ const campgrounds = [
     },
     {
       id: 2,
-      name: "",
+      name: "Campground 2",
       description: "This is the second campground.",
       // Add more properties as needed
     },

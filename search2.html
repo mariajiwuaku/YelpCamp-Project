@@ -13,7 +13,7 @@
   </head>
   <body>
     <div class="">
-          <!-- navbar -->
+      <!-- navbar -->
       <nav class="bg-white">
         <div class="max-w-full mx-8 my-6 lg:mx-16">
           <div class="flex justify-between">
@@ -26,9 +26,7 @@
               </div>
               <!-- Primary Navbar items -->
               <div class="hidden space-x-1 md:block">
-                <a
-                  href="index.html"
-                  class="px-2 py-4 font-semibold text-black"
+                <a href="index.html" class="px-2 py-4 font-semibold text-black"
                   >Home</a
                 >
               </div>
@@ -75,7 +73,7 @@
                 >Home</a
               >
             </li>
-            
+
             <li>
               <a
                 href="login.html"
@@ -93,32 +91,46 @@
           </ul>
         </div>
       </nav>
-  
+
       <div class="p-12 mx-8 rounded lg:mx-16 bg-bgColor">
-          <div class="md:w-[40%] sm:w-[70%] w-90%">
-             <h1 class="text-4xl font-bold">
-              welcome to YelpCamp!
-             </h1> 
-             <p class="my-6">
-              View our hand-picked campgrounds from all over the world, or add your own.
-             </p>
-             <div class="flex flex-col items-center sm:flex-row">
-              <div class="relative inline">
-                <img src="./src/Assets/Search Icon.svg" alt="searchIcon" class="absolute pr-3 ml-3 top-3">
-                <input type="search" placeholder="Search for camps" class="p-2 rounded-md outline-none pl-9" id="searchbar" onkeyup="search_camps()">
-              </div>
-              <button class="px-3 py-2 m-2 text-white bg-black rounded" >Search</button>
-             </div>
-             <a href="#">
-              <p class="pt-3 underline">Or add your own campground</p>
-             </a>
+        <div class="md:w-[40%] sm:w-[70%] w-90%">
+          <h1 class="text-4xl font-bold">welcome to YelpCamp!</h1>
+          <p class="my-6">
+            View our hand-picked campgrounds from all over the world, or add
+            your own.
+          </p>
+          <div class="flex flex-col items-center sm:flex-row">
+            <div class="relative inline">
+              <img
+                src="./src/Assets/Search Icon.svg"
+                alt="searchIcon"
+                class="absolute pr-3 ml-3 top-3"
+              />
+              <input
+                type="search"
+                placeholder="Search for camps"
+                class="p-2 rounded-md outline-none pl-9"
+                id="searchbar"
+                onkeyup="search_camps()"
+              />
+            </div>
+            <button class="px-3 py-2 m-2 text-white bg-black rounded">
+              Search
+            </button>
           </div>
+          <a href="#">
+            <p class="pt-3 underline">Or add your own campground</p>
+          </a>
+        </div>
       </div>
-      
+
       <!-- camps section -->
-       <ul class="grid grid-cols-1 gap-4 m-8 border-solid lg:m-16 lg:grid-cols-3 sm:grid-cols-2" id="list">
-            <!-- l1 -->
-            <!-- <li class="border-gray-300 border-solid border-[1px] w-full rounded-md p-2 camps">
+      <ul
+        class="grid grid-cols-1 gap-4 m-8 border-solid lg:m-16 lg:grid-cols-3 sm:grid-cols-2"
+        id="list"
+      >
+        <!-- l1 -->
+        <!-- <li class="border-gray-300 border-solid border-[1px] w-full rounded-md p-2 camps">
                 <img src="./src/Assets/Camp Images/Compressed Images/Mount Ulap.jpg" alt="" class="w-full rounded-md">
                 <div class="w-[80%]">
                 <h1 class="mt-3 font-bold">Mount Ulap</h1>
@@ -134,8 +146,8 @@
                 
             </li> -->
 
-            <!-- l2 -->
-            <!-- <li class="border-gray-300 border-solid border-[1px] w-full rounded-md p-2 camps">
+        <!-- l2 -->
+        <!-- <li class="border-gray-300 border-solid border-[1px] w-full rounded-md p-2 camps">
                 <img src="./src/Assets/Camp Images/Compressed Images/Calaguas Island.jpg" alt="" class="w-full rounded-md">
                 <div class="w-[80%]">
                 <h1 class="mt-3 font-bold">Calaguas Island</h1>
@@ -152,8 +164,8 @@
                 
             </li> -->
 
-            <!-- li3 -->
-            <!-- <li class="border-gray-300 border-solid border-[1px] w-full rounded-md p-2 camps">
+        <!-- li3 -->
+        <!-- <li class="border-gray-300 border-solid border-[1px] w-full rounded-md p-2 camps">
                 <img src="./src/Assets/Camp Images/Compressed Images/Onay Beach.jpg" alt="" class="w-full rounded-md">
                 <div class="w-[80%]">
                 <h1 class="mt-3 font-bold">Onay Beach</h1>
@@ -169,9 +181,9 @@
                 </div>
                 
             </li> -->
-            
-            <!-- li4 -->
-            <!-- <li class="border-gray-300 border-solid border-[1px] w-full rounded-md p-2 camps">
+
+        <!-- li4 -->
+        <!-- <li class="border-gray-300 border-solid border-[1px] w-full rounded-md p-2 camps">
                 <img src="./src/Assets/Camp Images/Compressed Images/Seven Sisters Waterfall.jpg" alt="" class="w-full rounded-md">
                 <div class="w-[80%]">
                 <h1 class="mt-3 font-bold">Seven Sisters Waterfall</h1>
@@ -187,8 +199,8 @@
                 
             </li> -->
 
-            <!-- li5 -->
-            <!-- <li class="border-gray-300 border-solid border-[1px] w-full rounded-md p-2 camps">
+        <!-- li5 -->
+        <!-- <li class="border-gray-300 border-solid border-[1px] w-full rounded-md p-2 camps">
                 <img src="./src/Assets/Camp Images/Compressed Images/Latik Riverside.jpg" alt="" class="w-full rounded-md">
                 <div class="w-[80%]">
                 <h1 class="mt-3 font-bold">Latik Riverside</h1>
@@ -205,8 +217,8 @@
                 
             </li> -->
 
-            <!-- li6 -->
-            <!-- <li class="border-gray-300 border-solid border-[1px] w-full rounded-md p-2 camps">
+        <!-- li6 -->
+        <!-- <li class="border-gray-300 border-solid border-[1px] w-full rounded-md p-2 camps">
                 <img src="./src/Assets/Camp Images/Compressed Images/Mount Ulap.jpg" alt="" class="w-full rounded-md">
                 <div class="w-[80%]">
                 <h1 class="mt-3 font-bold">Buloy Springs</h1>
@@ -222,10 +234,9 @@
                 </div>
                 
             </li> -->
-            
-       </ul>
-      
-     <footer class="ml-8 mb-9 lg:ml-16">
+      </ul>
+
+      <footer class="ml-8 mb-9 lg:ml-16">
         <img src="./src/Assets/Logo.svg" alt="" class="" />
       </footer>
     </div>
